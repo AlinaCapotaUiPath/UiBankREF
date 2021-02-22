@@ -1,0 +1,131 @@
+{
+  "name": "ReFramework Activity Coverage Exercise",
+  "description": "Robotic Enterprise Framework configured to take input from an Excel Workbook.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Credentials.Activities": "1.1.6479.13204",
+    "UiPath.Excel.Activities": "2.4.6884.25683",
+    "UiPath.System.Activities": "20.10.1",
+    "UiPath.Testing.Activities": "[1.2.4]",
+    "UiPath.UIAutomation.Activities": "20.10.5"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.0.0",
+  "projectVersion": "1.0.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "305e4c51-9359-41b5-a224-8a67a9521909",
+        "dataVariationFilePath": ".variations\\input_data_Sheet1.json",
+        "fileName": "Test_Framework\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ccefcde2-5ed1-41ee-9c7f-57225c6b23bd",
+        "dataVariationFilePath": ".variations\\TestData_Tests.json",
+        "fileName": "Test_Framework\\GeneralTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "81550ff0-b23f-4e50-846a-3923e54f40e8",
+        "fileName": "Test_Framework\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ad0c3ff1-f019-4ae8-a0ed-d6bfa08498b3",
+        "fileName": "Test_Framework\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f46b3e92-25ba-4b32-8316-4fadb6569eb8",
+        "dataVariationFilePath": ".variations\\input_data_Sheet1_1.json",
+        "fileName": "Test_Framework\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "98891879-936f-4ef6-a226-5097a35399a3",
+        "fileName": "Test_Framework\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f42aa04a-70ca-4640-8cc7-1084f460c313",
+        "dataVariationFilePath": ".variations\\TestData_Tests.json",
+        "fileName": "Tests\\Framework\\GeneralTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "690ab729-2076-4721-80eb-82fcef339f4e",
+        "fileName": "Tests\\Framework\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "57f4b7c0-cc78-46d9-910d-17c60b7fef59",
+        "fileName": "Tests\\Framework\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e255a22f-a9ef-4d30-ba75-ff4bcb56d031",
+        "fileName": "Tests\\Framework\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7ec61ff2-aa8c-4ed6-b09d-f97a98a96427",
+        "fileName": "Tests\\Framework\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3c016f1c-0afe-45ba-84b7-d49ce6e85a4f",
+        "dataVariationFilePath": ".variations\\InputData_Sheet1.json",
+        "fileName": "Tests\\Framework\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "54828db5-eaa5-433c-8eef-e810c84995c1",
+        "fileName": "Tests\\Test Cases\\Original Interface Loan Creation Verification.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e000e57f-1a41-42a8-9900-68211cf6631b",
+        "fileName": "Tests\\Test Cases\\New Interface Loan Creation Verification.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "6b9e2071-8a17-45aa-9d57-45a29d40e6ab",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}

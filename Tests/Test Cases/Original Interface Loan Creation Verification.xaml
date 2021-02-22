@@ -1,0 +1,247 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Original_Interface_Loan_Creation_Verification" this:Original_Interface_Loan_Creation_Verification.in_InterfaceType="Original" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_InterfaceType" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>862,1677.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Original_Interface_Loan_Creation_Verification_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="33">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Original_Interface_Loan_Creation_Verification" sap:VirtualizedContainerService.HintSize="872,1512.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="830,206" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke InitAllSettings workflow" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Data\Config.xlsx</InArgument>
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings","Constants"}]</InArgument>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="830,206" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Main workflow" sap:VirtualizedContainerService.HintSize="334,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Main.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_StatusFile" />
+          <InArgument x:TypeArguments="x:String" x:Key="in_InterfaceType">
+            <Literal x:TypeArguments="x:String">Original</Literal>
+          </InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="830,928.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="788,836.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="754,618.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="712,242" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Contains" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text '3% APR'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="NGetText_1">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank-frontendstaging.azurewebsites.net/loans/result/60229af9fa66c1002dd0aa02/3/true" DesignTimeRectangle="425, 435, 1070, 28" FriendlyName="'3% APR'" FullSelectorArgument="&lt;webctrl id='rate' tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl id='rate' tag='H4' type='' aaname='% APR ' /&gt;" ImageBase64="" InformativeScreenshot="4ee4ee8319a1ef2aaaa14492dadf4882.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Text="3% APR" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='H4' type='' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="855, 571, 209, 50" ElementType="Button" FriendlyName="'Back To Loan Center'" FullSelectorArgument="&lt;webctrl id='loanHomePage' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loanHomePage' tag='BUTTON' type='submit' aaname='loanHomePage' check:text='Back To Loan Center' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" Text="Back To Loan Center" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='submit' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:Object">
+                          <VariableReference x:TypeArguments="x:Object">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID0" Name="Text" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:String">["3"]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+              </uta:VerifyControlAttribute>
+              <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="712,242" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Contains" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'You've been'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="NGetText_2">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank-frontendstaging.azurewebsites.net/loans/result/60229af9fa66c1002dd0aa02/3/true" DesignTimeRectangle="425, 291, 1070, 48" FriendlyName="'Congrats!'" FullSelectorArgument="&lt;webctrl idx='1' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H1' /&gt;" ImageBase64="" InformativeScreenshot="570038a8ffb98a0a427c2a757cca85a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Text="Congrats!" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='H1' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="425, 347, 1070, 48" FriendlyName="'You've been'" FullSelectorArgument="&lt;webctrl idx='2' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H1' aaname=' You&amp;apos;ve been approved for a loan with UiBank! ' check:text='You&amp;apos;ve been approved for a loan with UiBank!' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" Text="You've been approved for a loan with UiBank!" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='H1' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:Object">
+                          <VariableReference x:TypeArguments="x:Object">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID1" Name="Text" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID1}" />
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:String">["Congrats!"]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+              </uta:VerifyControlAttribute>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="da3cfe7a054386db0144045a9119a324.png" Selector="&lt;html app='chrome.exe' title='UiBank'/&gt;" Url="[Config(&quot;OldUiBankURL&quot;).ToString]" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
